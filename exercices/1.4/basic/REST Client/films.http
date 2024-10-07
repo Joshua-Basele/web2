@@ -1,0 +1,68 @@
+GET http://localhost:3000/films
+
+
+GET http://localhost:3000/films?minimum-duration=170	
+
+@baseUrl = http://localhost:3000
+
+
+### Create a pizza
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+  "title": "Guardians of the Galaxy",
+  "director": "James Gunn",
+  "duration": 121,
+  "budget": 170,
+  "description": "A group of intergalactic criminals must work together to stop a fanatical warrior with plans to purge the universe.",
+  "imageUrl": "https://example.com/guardians_of_the_galaxy.jpg"
+}
+
+
+### Create a film
+POST {{baseUrl}}/films/
+Content-Type: application/json
+
+{
+    "title":"Star Wars: The Phantom Menace (Episode I)",
+    "duration": 136,
+    "director": "George Lucas",
+    "budget": 115,
+    "imageUrl":"https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg"
+}
+
+### Try to create a film with a parameter missing
+POST {{baseUrl}}/films/
+Content-Type: application/json
+
+{
+    "title":" ",
+    "duration": 136,
+    "budget": 115,
+    "imageUrl":"https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg"
+}
+
+### Try to create a film with an empty string or string with whitespaces only
+POST {{baseUrl}}/films/
+Content-Type: application/json
+
+{
+    "title":" ",
+    "duration": 136,
+    "director": "George Lucas",
+    "budget": 115,
+    "imageUrl":"https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg"
+}
+
+### Try to create a film with a wrong budget (string instead of number)
+POST {{baseUrl}}/films/
+Content-Type: application/json
+
+{
+    "title":"Star Wars: The Phantom Menace (Episode I)",
+    "duration": 136,
+    "director": "George Lucas",
+    "budget": "115",
+    "imageUrl":"https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg"
+}
