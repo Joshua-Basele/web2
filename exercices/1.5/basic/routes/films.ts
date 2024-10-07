@@ -57,7 +57,7 @@ router.get("/", (req, res) => {
     const minDuration = Number(req.query['minimum-duration'])
 
     if (isNaN(minDuration) || minDuration <= 0) {
-      res.json("Wrong minimum duration");
+      res.sendStatus(400);
     }
   
   const filteredFilms = defaultfilms.filter((film) => film.duration >= minDuration);
@@ -66,17 +66,20 @@ router.get("/", (req, res) => {
   });
 
   // Read the pizza identified by an id in the menu
-router.get("/:id", (req, res) => {
-  const films = parse(jsonDbPath, defaultfilms);
-  const idInRequest = parseInt(req.params.id, 10);
-  const indexOfFilmFound = films.findIndex(
-    (film: Film) => film.id === idInRequest
-  );
+  router.get("/:id", (req, res) => {
+    
+    const id = Number(req.params.id);
+    if (isNaN(id)) {
+      return res.sendStatus(400);
+    }
 
-  if (indexOfFilmFound < 0) return res.sendStatus(404);
+    const film = defaultfilms.find((film) => film.id === id);
+    if (film === undefined) {
+      return res.sendStatus(404);
+    }
 
-  return res.json(films[indexOfFilmFound]);
-});
+    return res.send(film);
+  });
 
 
 // Create a pizza to be added to the menu.
@@ -95,7 +98,7 @@ router.post("/", (req, res) => {
     !body.director.trim() ||
     body.duration <=0
   ) {
-    return res.json("Wrong body format");
+    return res.sendStatus(400);
   }
 
   const films = parse(jsonDbPath, defaultfilms);
