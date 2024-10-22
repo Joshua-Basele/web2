@@ -68,7 +68,7 @@ Content-Type: application/json
 }
 
 ### Delete the film with ID == 2
-DELETE {{baseUrl}}/films/11
+DELETE {{baseUrl}}/films/2
 
 
 ### Update film with ID == 2
