@@ -1,0 +1,20 @@
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;  
+    border: 1px solid;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);    
+}
+
+header div{
+    margin-left: 32%;
+}
+
+header img{
+    width: 100px;
+    margin-left: 100px;
+}
