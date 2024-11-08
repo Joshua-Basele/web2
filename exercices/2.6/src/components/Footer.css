@@ -1,0 +1,22 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 99.9%;
+    height: auto;
+    display: flex;
+    flex-direction: row;  
+    border: 1px solid;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);    
+}
+
+footer div{
+    margin-left: 43%;
+}
+
+footer img{
+    width: 100px;
+    margin-left: 688px;
+    border-radius: 10px;
+}
