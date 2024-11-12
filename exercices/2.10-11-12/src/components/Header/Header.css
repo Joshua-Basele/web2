@@ -1,0 +1,49 @@
+/* Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-bottom: 2px solid #c247ff;
+}
+
+/* Centering and styling the title */
+.header h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Icon styling */
+.header h1::before {
+  content: '🎬';
+  font-size: 1.5em;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.header h1:hover {
+  color: #f947ff;
+}
+
+.header h1:hover::before {
+  transform: rotate(-10deg);
+}
+
+/* Add padding to the top of the body to avoid overlap with fixed header */
+body {
+  padding-top: 70px;
+}
