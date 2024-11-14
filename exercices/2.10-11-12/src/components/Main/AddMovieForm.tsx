@@ -6,7 +6,7 @@ interface AddMovieProps {
     addMovie: (movie: Movie) => void
 };
 
-const AddMovie = ({addMovie} : AddMovieProps) => {
+const AddMovieForm = ({addMovie} : AddMovieProps) => {
     const [title, setTitle] = useState("");
     const [director, setDirector] = useState("");
     const [time, setTime] = useState("");
@@ -91,4 +91,4 @@ const AddMovie = ({addMovie} : AddMovieProps) => {
     );
 }
 
-export default AddMovie;
+export default AddMovieForm;

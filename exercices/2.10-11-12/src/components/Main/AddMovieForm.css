@@ -2,7 +2,7 @@
     max-width: 500px;
     width: 100%;
     border-radius: 10px;
-    margin: 5% auto; /* Centre horizontalement */
+    margin: 0 auto; /* Centre horizontalement */
 }
 
 .form-ajout label {

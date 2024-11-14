@@ -1,0 +1,12 @@
+html, body {
+    height: 100%; /* Prend toute la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+  }
+  
+  .app-container {
+    min-height: 100vh; /* S'assure que le conteneur prend toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  

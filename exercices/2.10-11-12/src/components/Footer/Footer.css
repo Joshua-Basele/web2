@@ -1,5 +1,7 @@
-/* Footer styling */
-.footer {
+  /* Footer styling */
+  .footer {
+    margin-top: auto;
+
     background-color: #1e1e1e;
     padding: 1.5rem;
     text-align: center;
@@ -7,14 +9,15 @@
     font-size: 0.9em;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
   }
-  
-  .footer a {
-    color: #8888ff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .footer a:hover {
-    color: #ffffff;
-  }
+
+    
+    .footer a {
+      color: #8888ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .footer a:hover {
+      color: #ffffff;
+    }
