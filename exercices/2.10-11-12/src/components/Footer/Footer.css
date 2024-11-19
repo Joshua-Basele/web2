@@ -1,13 +1,16 @@
   /* Footer styling */
   .footer {
-    margin-top: auto;
-
     background-color: #1e1e1e;
-    padding: 1.5rem;
-    text-align: center;
     color: #bbbbbb;
-    font-size: 0.9em;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.566);
   }
 
     

@@ -5,6 +5,7 @@ const CinemaPage = () => {
 
   const moviesCinema1 = [
     {
+      id: 1,
       title: "AVATAR: THE WAY OF WATER",
       director: "James Cameron",
       time: "192 min",
@@ -13,6 +14,7 @@ const CinemaPage = () => {
       budget: 350, // Budget en millions de dollars
     },
     {
+      id: 2,
       title: "THE SUPER MARIO BROS. MOVIE",
       director: "Aaron Horvath, Michael Jelenic",
       time: "92 min",
@@ -21,6 +23,7 @@ const CinemaPage = () => {
       budget: 100,
     },
     {
+      id: 3,
       title: "TOP GUN: MAVERICK",
       director: "Joseph Kosinski",
       time: "130 min",
@@ -29,6 +32,7 @@ const CinemaPage = () => {
       budget: 170,
     },
     {
+      id: 4,
       title: "SPIDER-MAN: NO WAY HOME",
       director: "Jon Watts",
       time: "148 min",
@@ -43,6 +47,7 @@ const CinemaPage = () => {
 
   const moviesCinema2 = [
     {
+      id: 5,
       title: "AVENGERS: ENDGAME",
       director: "Anthony Russo, Joe Russo",
       time: "181 min",
@@ -51,6 +56,7 @@ const CinemaPage = () => {
       budget: 356,
     },
     {
+      id: 6,
       title: "JURASSIC WORLD: DOMINION",
       director: "Colin Trevorrow",
       time: "146 min",
@@ -59,6 +65,7 @@ const CinemaPage = () => {
       budget: 185,
     },
     {
+      id: 7,
       title: "BLACK PANTHER: WAKANDA FOREVER",
       director: "Ryan Coogler",
       time: "161 min",
@@ -67,6 +74,7 @@ const CinemaPage = () => {
       budget: 250,
     },
     {
+      id: 8,
       title: "FURIOUS 7",
       director: "James Wan",
       time: "137 min",

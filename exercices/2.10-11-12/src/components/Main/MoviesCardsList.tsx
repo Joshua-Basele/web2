@@ -10,6 +10,10 @@ interface Movies {
         {props.movies.map((movie) => (
           <MovieCard key={movie.title} movie={movie}/>
         ))}
+        <br />
+        <br />
+        <br />
+        <br />
     </div>
   );
 

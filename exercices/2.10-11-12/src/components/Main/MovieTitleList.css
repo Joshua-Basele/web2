@@ -1,0 +1,30 @@
+/* MovieTileList.css */
+.MovieTitleList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+li {
+    background-color: #000000;
+    color: rgb(124, 124, 124);
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.303);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 15px;
+    text-align: center;
+}
+
+li:hover {
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(154, 154, 154, 0.2);
+}
+
+.MovieTitleListText {
+    text-decoration: none;
+    font-size: 15px;
+}  
