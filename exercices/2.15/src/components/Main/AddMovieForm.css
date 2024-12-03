@@ -1,0 +1,66 @@
+.form-ajout {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto; /* Centre horizontalement */
+}
+
+.form-ajout label {
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #636363;
+}
+
+.form-ajout input[type="text"],
+.form-ajout input[type="number"],
+.form-ajout input[type="url"],
+.form-ajout textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: NONE;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-ajout input:focus,
+.form-ajout textarea:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.form-ajout textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.form-ajout button {
+    width: 520px;
+    padding: 12px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.form-ajout button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+}
+
+.form-ajout button:active {
+    transform: scale(0.97);
+}
+
+.form-ajout button:focus {
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}

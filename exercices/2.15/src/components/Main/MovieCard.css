@@ -1,0 +1,103 @@
+/* Styling for MovieCard Component */
+.movie-card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 700px;    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    background-color: #1e1e1e; /* Dark background for the card */
+    color: #f1f1f1; /* Light text color for good contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 3% auto; /* Centre horizontalement */
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hover effect to elevate the card */
+.movie-card:hover {
+    width: 800px;
+    transition: 0.7s;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+/* Styling for the movie image */
+.movie-image {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Container for movie details with padding */
+.movie-details {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling for the movie title */
+.movie-title {
+    font-size: 1.8em;
+    margin: 0;
+    color: #ecf0f1; /* Light color for title */
+    font-weight: 600;
+}
+
+/* Common styling for director, time, description, and budget */
+.movie-director,
+.movie-time,
+.movie-description,
+.movie-budget {
+    margin: 8px 0;
+    color: #bdc3c7; /* Medium gray color */
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* Slightly different color for description */
+.movie-description {
+    font-size: 0.95em;
+    color: #95a5a6; /* Lighter gray for description */
+    line-height: 1.4em;
+}
+
+/* Button-like effect for budget */
+.movie-budget {
+    font-weight: bold;
+    color: #e1be6e; /* Red for budget for visibility */
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .movie-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        max-width: 90%;
+    }
+
+    .movie-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .movie-details {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .movie-title {
+        font-size: 1.6em;
+    }
+
+    .movie-budget {
+        font-size: 1em;
+    }
+}
